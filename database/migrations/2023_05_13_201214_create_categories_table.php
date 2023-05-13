@@ -26,8 +26,8 @@ return new class extends Migration
             $table->foreignId('parent_id')
             ->nullable()
             ->constrained('categories', 'id')
-            ->setNullOnDelete()
-            ->setNullOnUpdate();
+            ->nullOnDelete()
+            ->nullOnUpdate();
             
             
 
@@ -37,7 +37,7 @@ return new class extends Migration
 
             $table->text('description')->nullable();
             $table->string('image')->nullable();
-            
+
             $table->timestamps();
         });
     }
