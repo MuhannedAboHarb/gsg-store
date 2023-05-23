@@ -21,3 +21,5 @@ Route::get('/NEWS/{id}',[HomeController::class , 'news']);
 
 
 Route::get('/admin/dashboard',[DashboardController::class,'index']);
+
+Route::get('/admin/dashboard/page',[DashboardController::class,'page']);
