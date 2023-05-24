@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Dashboard\CategoriesController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -17,9 +18,11 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/',[HomeController::class , 'index']);
 
-Route::get('/NEWS/{id}',[HomeController::class , 'news']);
+Route::get('/',[HomeController::class , 'news']);
 
 
-Route::get('/admin/dashboard',[DashboardController::class,'index']);
+Route::get('/dashboard',[DashboardController::class,'index']);
 
-Route::get('/admin/dashboard/page',[DashboardController::class,'page']);
+//Read
+Route::get('/dashboard/categories',[CategoriesController::class,'index'])
+        ->name('dashboard.categories.index');
