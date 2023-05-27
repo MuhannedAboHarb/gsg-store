@@ -27,9 +27,10 @@ class CategoriesController extends Controller
         return view('dashboard.categories.create');
     }
 
-    public function store() 
+    public function store(Request $request) 
     {
-        
+        return $request->all();
+        return $request->all();
     }
 
 

@@ -8,20 +8,29 @@ return [
     'categories' => [
         'title'=> 'Categories',
         'icon'=> 'for fa-circle nav-icon',
-        'route'=>'/dashboard/categorie',
+        'route'=>'/dashboard/categories',
         'badge'=>[
             'class'=> 'warning',
             'label'=>'New'
         ],
     ],
+
+    
+    'create' => [
+        'title'=> 'Create Category',
+        'icon'=> 'fa fa-shopping-basket',
+        'route'=>'/dashboard/categories/create',
+        'badge'=>[
+            'class'=> 'success',
+            'label'=>'Add'
+        ],
+    ],
+
+
     'orders' => [
         'title'=> 'Orders',
         'icon'=> 'fa fa-shopping-basket',
         'route'=>'/dashboard/orders',
-        'badge'=>[
-            'class'=> 'success',
-            'label'=>'Success'
-        ],
     ],
     'products' => [
         'title'=> 'Product',

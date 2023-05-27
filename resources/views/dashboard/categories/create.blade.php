@@ -9,6 +9,8 @@
 @section('content')
   <form action="{{route('dashboard.categories.store')}}" method="post">
     
+    @csrf
+    
     <div class="form-group mb-3">
       <label for="name">Category Name</label>
       <input type="text" name="name" id="name" class="form-control">
@@ -18,6 +20,10 @@
       <label for="parent_id">Category Parent</label>
       <select name="parent_id" id="parent_id" class="form-control">
         <option value="">No Parent</option>
+        <option value="">Category Shirt</option>
+        <option value="">Category Jeans</option>
+        <option value="">Category Shoes</option>
+        <option value="">Category Caps</option>
       </select>
     </div>
 
